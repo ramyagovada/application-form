@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+
+<h1>APPLICATION FORM</h1>
+
+<form id="form" onsubmit="return submitForm()">
+
+    <h3 class="details">--------- Personal Details ---------</h3>
+
+    <label for="studentName">Name of the Student:</label>
+    <input type="text" id="studentName" placeholder="Enter Your Name">
+
+    <label for="fatherName">Father Name:</label>
+    <input type="text" id="fatherName" placeholder="Enter Father Name">
+
+    <label for="motherName">Mother Name:</label>
+    <input type="text" id="motherName" placeholder="Enter Mother Name">
+
+<label>Gender:</label>
+<div class="radio-group">
+    <label class="radio-option">
+        <input type="radio" name="gender" value="Male">
+        <span class="custom-radio"></span>
+        Male
+    </label>
+
+    <label class="radio-option">
+        <input type="radio" name="gender" value="Female">
+        <span class="custom-radio"></span>
+        Female
+    </label>
+</div>
+
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" placeholder="Enter Contact Number">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <h3 class="details">--------- Course Details ---------</h3>
+
+    <label for="course">Choose Your Course:</label>
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>BSc</option>
+        <option>MSc</option>
+        <option>BCA</option>
+        <option>BBA</option>
+        <option>MCA</option>
+        <option>BTech</option>
+    </select>
+
+    <label>Mode:</label>
+<div class="radio-group">
+    <label class="radio-option">
+        <input type="radio" name="mode" value="Online">
+        <span class="custom-radio"></span>
+        Online
+    </label>
+
+    <label class="radio-option">
+        <input type="radio" name="mode" value="offline">
+        <span class="custom-radio"></span>
+        offline
+    </label>
+</div>
+
+    <label for="timing">Class Timings:</label>
+    <select id="timing">
+        <option value="">Select Timing</option>
+        <option>9am - 12pm</option>
+        <option>2pm - 5pm</option>
+        <option>6pm - 9pm</option>
+    </select>
+
+    <label for="date">Date of Joining:</label>
+    <input type="date" id="date">
+
+    <button type="submit">Submit Application</button>
+    <button type="button" onclick="printForm()">Print Application</button>
+
+</form>
+
+<script src="application.js"></script>
+</body>
+</html>
